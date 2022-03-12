@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginController" customModule="aula05" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyk-pa-odj">
+                                <rect key="frame" x="16" y="558" width="382" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="DLZ-JM-vWh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Entrar">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="autenticar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="am5-cQ-geL"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applelogo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Zgh-ia-a1f">
+                                <rect key="frame" x="142" y="164.5" width="130" height="128.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="eWy-0P-5VY"/>
+                                    <constraint firstAttribute="width" constant="130" id="jL3-XY-wt5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe seu e-mail" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQa-lw-Lzc">
+                                <rect key="frame" x="16" y="334" width="382" height="21"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email@apple.com" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NGm-pQ-JVh">
+                                <rect key="frame" x="16" y="360" width="382" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="FVO-57-LtE"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe sua senha" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCA-GX-MOk">
+                                <rect key="frame" x="16" y="437" width="382" height="21"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="minhasenhalegal" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VAV-Rm-85m">
+                                <rect key="frame" x="16" y="463" width="382" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="qIT-MH-nuM"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        <constraints>
+                            <constraint firstItem="NGm-pQ-JVh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2K8-VO-4bW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VAV-Rm-85m" secondAttribute="trailing" constant="16" id="314-Lf-wfh"/>
+                            <constraint firstItem="Zgh-ia-a1f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="Af9-oh-xhp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NGm-pQ-JVh" secondAttribute="trailing" constant="16" id="Att-eT-G2F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jCA-GX-MOk" secondAttribute="trailing" constant="16" id="Evd-B6-zZp"/>
+                            <constraint firstItem="gQa-lw-Lzc" firstAttribute="top" secondItem="Zgh-ia-a1f" secondAttribute="bottom" constant="40" id="NzW-tz-TAr"/>
+                            <constraint firstItem="Zgh-ia-a1f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Osy-NC-iME"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kyk-pa-odj" secondAttribute="trailing" constant="16" id="QYE-CH-Mqe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gQa-lw-Lzc" secondAttribute="trailing" constant="16" id="T0W-pK-Z3R"/>
+                            <constraint firstItem="NGm-pQ-JVh" firstAttribute="top" secondItem="gQa-lw-Lzc" secondAttribute="bottom" constant="5" id="T70-yJ-K7X"/>
+                            <constraint firstItem="VAV-Rm-85m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TJ7-zR-Sgq"/>
+                            <constraint firstItem="VAV-Rm-85m" firstAttribute="top" secondItem="jCA-GX-MOk" secondAttribute="bottom" constant="5" id="UnB-19-DXP"/>
+                            <constraint firstItem="jCA-GX-MOk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="c6z-Fe-hBJ"/>
+                            <constraint firstItem="gQa-lw-Lzc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gwp-nq-ntz"/>
+                            <constraint firstItem="kyk-pa-odj" firstAttribute="top" secondItem="VAV-Rm-85m" secondAttribute="bottom" constant="50" id="iaM-JG-VLe"/>
+                            <constraint firstItem="jCA-GX-MOk" firstAttribute="top" secondItem="NGm-pQ-JVh" secondAttribute="bottom" constant="32" id="rKF-MJ-nyh"/>
+                            <constraint firstItem="kyk-pa-odj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="w5e-sG-Uiy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authButton" destination="kyk-pa-odj" id="6Ir-9c-kHd"/>
+                        <outlet property="emailTextField" destination="NGm-pQ-JVh" id="PbA-l8-aJW"/>
+                        <outlet property="passwordTextField" destination="VAV-Rm-85m" id="SfD-SY-Jo7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="applelogo" catalog="system" width="103" height="128"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
