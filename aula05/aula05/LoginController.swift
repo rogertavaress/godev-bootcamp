@@ -8,7 +8,6 @@
 import UIKit
 
 class LoginController: UIViewController {
-
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var authButton: UIButton!
@@ -16,6 +15,15 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        authButton.layer.cornerRadius = 10
+        
+        delegates()
+    }
+    
+    private func delegates() {
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
 
     @IBAction func autenticar(_ sender: Any) {
@@ -60,5 +68,16 @@ extension LoginController {
         alert.addAction(UIAlertAction(title: "Fechar", style: .cancel, handler: nil))
         
         present(alert, animated: true, completion: nil)
+    }
+}
+
+extension LoginController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
 }
