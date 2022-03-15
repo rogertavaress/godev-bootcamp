@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarImageCollectionViewCell" id="gTV-IL-0wX" customClass="CarImageCollectionViewCell" customModule="desafioCarros" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="457" height="330"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="457" height="330"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="ebc-zY-8VV" userLabel="Carro">
+                        <rect key="frame" x="0.0" y="0.0" width="457" height="330"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moldura" translatesAutoresizingMaskIntoConstraints="NO" id="9Uj-Uc-C1D" userLabel="Moldura">
+                        <rect key="frame" x="0.0" y="0.0" width="457" height="330"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ebc-zY-8VV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1S0-Ji-u7Y"/>
+                <constraint firstAttribute="trailing" secondItem="ebc-zY-8VV" secondAttribute="trailing" id="9tg-Gb-XJa"/>
+                <constraint firstItem="9Uj-Uc-C1D" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Jgb-69-hlE"/>
+                <constraint firstAttribute="bottom" secondItem="9Uj-Uc-C1D" secondAttribute="bottom" id="Jv1-fS-MaD"/>
+                <constraint firstItem="ebc-zY-8VV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="K5q-vO-iO7"/>
+                <constraint firstItem="9Uj-Uc-C1D" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="THC-9l-Lmh"/>
+                <constraint firstAttribute="trailing" secondItem="9Uj-Uc-C1D" secondAttribute="trailing" id="dkX-RL-EyN"/>
+                <constraint firstAttribute="bottom" secondItem="ebc-zY-8VV" secondAttribute="bottom" id="ui0-2G-rZ3"/>
+            </constraints>
+            <size key="customSize" width="457" height="330"/>
+            <connections>
+                <outlet property="carImageView" destination="ebc-zY-8VV" id="yDw-wp-6sv"/>
+            </connections>
+            <point key="canvasLocation" x="426.81159420289856" y="223.66071428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="1" width="960" height="720"/>
+        <image name="moldura" width="640" height="480"/>
+    </resources>
+</document>
