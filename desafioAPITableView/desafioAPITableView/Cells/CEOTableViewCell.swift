@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CEOTableViewCell: UITableViewCell {
     
@@ -22,9 +23,13 @@ class CEOTableViewCell: UITableViewCell {
     }
 
     func configure(with model: CEOModel) {
-        photoImageView.loadImage(from: model.photo)
         titleLabel.text = model.name
         descriptionLabel.text = model.company.name
+        
+        if let url = URL(string: model.photo) {
+            photoImageView.kf.setImage(with: url)
+        }
+        
     }
     
 }

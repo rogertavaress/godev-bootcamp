@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 enum GetListServiceError: Error {
     case urlInvalid
@@ -32,23 +33,29 @@ struct GetListService: GetListServiceProtocol {
             return
         }
         
-        let dataTask = session.dataTask(with: url) { data, _, _ in
-            do {
-                guard let jsonData = data else {
-                    completion(.failure(.noDataAvailable))
-                    return
-                }
-                
-                let decoder = JSONDecoder()
-                
-                let response = try decoder.decode([CEOModel].self, from: jsonData)
-                
-                completion(.success(response))
-            } catch {
-                completion(.failure(.noProcessData))
-            }
+        AF.request(url, method: .get).validate().responseDecodable(of: [CEOModel].self) { response in
+            guard let CEOs = response.value else { return }
+            
+            completion(.success(CEOs))
         }
         
-        dataTask.resume()
+//        let dataTask = session.dataTask(with: url) { data, _, _ in
+//            do {
+//                guard let jsonData = data else {
+//                    completion(.failure(.noDataAvailable))
+//                    return
+//                }
+//
+//                let decoder = JSONDecoder()
+//
+//                let response = try decoder.decode([CEOModel].self, from: jsonData)
+//
+//                completion(.success(response))
+//            } catch {
+//                completion(.failure(.noProcessData))
+//            }
+//        }
+//
+//        dataTask.resume()
     }
 }

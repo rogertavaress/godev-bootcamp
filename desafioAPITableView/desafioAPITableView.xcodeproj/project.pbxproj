@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58F0A111FDB6D6020F7DC841 /* libPods-desafioAPITableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0226EDE11090FBA16A846407 /* libPods-desafioAPITableView.a */; };
 		9E6489B727E9292C00825FAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6489B627E9292C00825FAA /* AppDelegate.swift */; };
 		9E6489B927E9292C00825FAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6489B827E9292C00825FAA /* SceneDelegate.swift */; };
 		9E6489BB27E9292C00825FAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6489BA27E9292C00825FAA /* ViewController.swift */; };
 		9E6489BE27E9292C00825FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E6489BC27E9292C00825FAA /* Main.storyboard */; };
 		9E6489C027E9293100825FAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E6489BF27E9293100825FAA /* Assets.xcassets */; };
 		9E6489C327E9293100825FAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E6489C127E9293100825FAA /* LaunchScreen.storyboard */; };
-		9E6489CB27E929C500825FAA /* UIImageView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6489CA27E929C500825FAA /* UIImageView+extensions.swift */; };
 		9E6489CF27E92AFC00825FAA /* CEOTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6489CD27E92AFB00825FAA /* CEOTableViewCell.swift */; };
 		9E6489D027E92AFC00825FAA /* CEOTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E6489CE27E92AFC00825FAA /* CEOTableViewCell.xib */; };
 		9E6489D327E9300C00825FAA /* CEOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6489D227E9300C00825FAA /* CEOModel.swift */; };
 		9E6489D627E932EB00825FAA /* GetListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6489D527E932EB00825FAA /* GetListService.swift */; };
+		9EB397F027E951BF0052BCC6 /* UIImageView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB397EF27E951BF0052BCC6 /* UIImageView+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0226EDE11090FBA16A846407 /* libPods-desafioAPITableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-desafioAPITableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		286A5C17497ACDB1F0C61417 /* Pods-desafioAPITableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafioAPITableView.release.xcconfig"; path = "Target Support Files/Pods-desafioAPITableView/Pods-desafioAPITableView.release.xcconfig"; sourceTree = "<group>"; };
+		6A88302B354F16791B0267F7 /* Pods-desafioAPITableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafioAPITableView.debug.xcconfig"; path = "Target Support Files/Pods-desafioAPITableView/Pods-desafioAPITableView.debug.xcconfig"; sourceTree = "<group>"; };
 		9E6489B327E9292C00825FAA /* desafioAPITableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desafioAPITableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E6489B627E9292C00825FAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E6489B827E9292C00825FAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,11 +33,11 @@
 		9E6489BF27E9293100825FAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E6489C227E9293100825FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E6489C427E9293100825FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E6489CA27E929C500825FAA /* UIImageView+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+extensions.swift"; sourceTree = "<group>"; };
 		9E6489CD27E92AFB00825FAA /* CEOTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEOTableViewCell.swift; sourceTree = "<group>"; };
 		9E6489CE27E92AFC00825FAA /* CEOTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CEOTableViewCell.xib; sourceTree = "<group>"; };
 		9E6489D227E9300C00825FAA /* CEOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEOModel.swift; sourceTree = "<group>"; };
 		9E6489D527E932EB00825FAA /* GetListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListService.swift; sourceTree = "<group>"; };
+		9EB397EF27E951BF0052BCC6 /* UIImageView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F0A111FDB6D6020F7DC841 /* libPods-desafioAPITableView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22B1A0DDAEB362D98A0EDD63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0226EDE11090FBA16A846407 /* libPods-desafioAPITableView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		395C934B7208E971F61A5EAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A88302B354F16791B0267F7 /* Pods-desafioAPITableView.debug.xcconfig */,
+				286A5C17497ACDB1F0C61417 /* Pods-desafioAPITableView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9E6489AA27E9292C00825FAA = {
 			isa = PBXGroup;
 			children = (
 				9E6489B527E9292C00825FAA /* desafioAPITableView */,
 				9E6489B427E9292C00825FAA /* Products */,
+				395C934B7208E971F61A5EAC /* Pods */,
+				22B1A0DDAEB362D98A0EDD63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,7 +90,7 @@
 		9E6489B527E9292C00825FAA /* desafioAPITableView */ = {
 			isa = PBXGroup;
 			children = (
-				9E6489D827E93EE600825FAA /* Extensions */,
+				9EB397EE27E951640052BCC6 /* Extensions */,
 				9E6489D727E93ECC00825FAA /* App */,
 				9E6489D427E932CB00825FAA /* Services */,
 				9E6489D127E9300100825FAA /* Models */,
@@ -114,10 +138,10 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		9E6489D827E93EE600825FAA /* Extensions */ = {
+		9EB397EE27E951640052BCC6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9E6489CA27E929C500825FAA /* UIImageView+extensions.swift */,
+				9EB397EF27E951BF0052BCC6 /* UIImageView+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -129,6 +153,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E6489C727E9293100825FAA /* Build configuration list for PBXNativeTarget "desafioAPITableView" */;
 			buildPhases = (
+				B798067758283E3F1A301798 /* [CP] Check Pods Manifest.lock */,
 				9E6489AF27E9292C00825FAA /* Sources */,
 				9E6489B027E9292C00825FAA /* Frameworks */,
 				9E6489B127E9292C00825FAA /* Resources */,
@@ -189,15 +214,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B798067758283E3F1A301798 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-desafioAPITableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9E6489AF27E9292C00825FAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EB397F027E951BF0052BCC6 /* UIImageView+extensions.swift in Sources */,
 				9E6489BB27E9292C00825FAA /* ViewController.swift in Sources */,
 				9E6489D627E932EB00825FAA /* GetListService.swift in Sources */,
 				9E6489B727E9292C00825FAA /* AppDelegate.swift in Sources */,
-				9E6489CB27E929C500825FAA /* UIImageView+extensions.swift in Sources */,
 				9E6489D327E9300C00825FAA /* CEOModel.swift in Sources */,
 				9E6489B927E9292C00825FAA /* SceneDelegate.swift in Sources */,
 				9E6489CF27E92AFC00825FAA /* CEOTableViewCell.swift in Sources */,
@@ -342,6 +392,7 @@
 		};
 		9E6489C827E9293100825FAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A88302B354F16791B0267F7 /* Pods-desafioAPITableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -370,6 +421,7 @@
 		};
 		9E6489C927E9293100825FAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 286A5C17497ACDB1F0C61417 /* Pods-desafioAPITableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
