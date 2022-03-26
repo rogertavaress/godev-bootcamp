@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EEE4C5127EE7C5D00472B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE4C5027EE7C5D00472B66 /* AppDelegate.swift */; };
+		9EEE4C5327EE7C5D00472B66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE4C5227EE7C5D00472B66 /* SceneDelegate.swift */; };
+		9EEE4C5527EE7C5D00472B66 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE4C5427EE7C5D00472B66 /* ChatViewController.swift */; };
+		9EEE4C5A27EE7C6000472B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EEE4C5927EE7C6000472B66 /* Assets.xcassets */; };
+		9EEE4C5D27EE7C6000472B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEE4C5B27EE7C6000472B66 /* LaunchScreen.storyboard */; };
+		9EEE4C6827EE83E000472B66 /* ChatItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE4C6727EE83E000472B66 /* ChatItemTableViewCell.swift */; };
+		9EEE4C6B27EE874900472B66 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE4C6A27EE874900472B66 /* Chat.swift */; };
+		9EEE4C6E27EE8E2A00472B66 /* ChatHeaderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE4C6D27EE8E2A00472B66 /* ChatHeaderTableView.swift */; };
+		9EEE4C7127EE9A5300472B66 /* GetChatDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE4C7027EE9A5300472B66 /* GetChatDataService.swift */; };
+		9EEE4C7527EEA16400472B66 /* UIImageView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE4C7427EEA16400472B66 /* UIImageView+extensions.swift */; };
+		9EEE4C7727EEB11500472B66 /* simulator_screenshot_CE9DC48C-6815-427D-B5E6-432C15C5DE4E.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EEE4C7627EEB11500472B66 /* simulator_screenshot_CE9DC48C-6815-427D-B5E6-432C15C5DE4E.png */; };
+		D7D0B61C66CED56C362D5114 /* libPods-desafioWhatsappViewCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A8F455FCE0ECBA534344E5 /* libPods-desafioWhatsappViewCode.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		31A1F932B6BD99BEA115EF1A /* Pods-desafioWhatsappViewCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafioWhatsappViewCode.debug.xcconfig"; path = "Target Support Files/Pods-desafioWhatsappViewCode/Pods-desafioWhatsappViewCode.debug.xcconfig"; sourceTree = "<group>"; };
+		47A8F455FCE0ECBA534344E5 /* libPods-desafioWhatsappViewCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-desafioWhatsappViewCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEE4C4D27EE7C5D00472B66 /* desafioWhatsappViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desafioWhatsappViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEE4C5027EE7C5D00472B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9EEE4C5227EE7C5D00472B66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9EEE4C5427EE7C5D00472B66 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		9EEE4C5927EE7C6000472B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9EEE4C5C27EE7C6000472B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9EEE4C5E27EE7C6000472B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EEE4C6727EE83E000472B66 /* ChatItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatItemTableViewCell.swift; sourceTree = "<group>"; };
+		9EEE4C6A27EE874900472B66 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		9EEE4C6D27EE8E2A00472B66 /* ChatHeaderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHeaderTableView.swift; sourceTree = "<group>"; };
+		9EEE4C7027EE9A5300472B66 /* GetChatDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetChatDataService.swift; sourceTree = "<group>"; };
+		9EEE4C7227EE9D3500472B66 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9EEE4C7427EEA16400472B66 /* UIImageView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extensions.swift"; sourceTree = "<group>"; };
+		9EEE4C7627EEB11500472B66 /* simulator_screenshot_CE9DC48C-6815-427D-B5E6-432C15C5DE4E.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "simulator_screenshot_CE9DC48C-6815-427D-B5E6-432C15C5DE4E.png"; sourceTree = "<group>"; };
+		E67AC6522444C6E97C18632B /* Pods-desafioWhatsappViewCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafioWhatsappViewCode.release.xcconfig"; path = "Target Support Files/Pods-desafioWhatsappViewCode/Pods-desafioWhatsappViewCode.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EEE4C4A27EE7C5D00472B66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D0B61C66CED56C362D5114 /* libPods-desafioWhatsappViewCode.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EEE4C4427EE7C5D00472B66 = {
+			isa = PBXGroup;
+			children = (
+				9EEE4C7627EEB11500472B66 /* simulator_screenshot_CE9DC48C-6815-427D-B5E6-432C15C5DE4E.png */,
+				9EEE4C7227EE9D3500472B66 /* README.md */,
+				9EEE4C4F27EE7C5D00472B66 /* desafioWhatsappViewCode */,
+				9EEE4C4E27EE7C5D00472B66 /* Products */,
+				A1E7705675B7987ED8D709C4 /* Pods */,
+				9F46988EC532D0FE76775865 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9EEE4C4E27EE7C5D00472B66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EEE4C4D27EE7C5D00472B66 /* desafioWhatsappViewCode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EEE4C4F27EE7C5D00472B66 /* desafioWhatsappViewCode */ = {
+			isa = PBXGroup;
+			children = (
+				9EEE4C7327EEA15800472B66 /* Extensions */,
+				9EEE4C6F27EE9A2B00472B66 /* Services */,
+				9EEE4C6C27EE8DFE00472B66 /* Views */,
+				9EEE4C6927EE873C00472B66 /* Models */,
+				9EEE4C6427EE83A400472B66 /* Scenes */,
+				9EEE4C5027EE7C5D00472B66 /* AppDelegate.swift */,
+				9EEE4C5227EE7C5D00472B66 /* SceneDelegate.swift */,
+				9EEE4C5927EE7C6000472B66 /* Assets.xcassets */,
+				9EEE4C5B27EE7C6000472B66 /* LaunchScreen.storyboard */,
+				9EEE4C5E27EE7C6000472B66 /* Info.plist */,
+			);
+			path = desafioWhatsappViewCode;
+			sourceTree = "<group>";
+		};
+		9EEE4C6427EE83A400472B66 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9EEE4C6527EE83AA00472B66 /* Chat */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9EEE4C6527EE83AA00472B66 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				9EEE4C5427EE7C5D00472B66 /* ChatViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		9EEE4C6627EE83BC00472B66 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9EEE4C6727EE83E000472B66 /* ChatItemTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9EEE4C6927EE873C00472B66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9EEE4C6A27EE874900472B66 /* Chat.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9EEE4C6C27EE8DFE00472B66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9EEE4C6627EE83BC00472B66 /* Cells */,
+				9EEE4C6D27EE8E2A00472B66 /* ChatHeaderTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9EEE4C6F27EE9A2B00472B66 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9EEE4C7027EE9A5300472B66 /* GetChatDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9EEE4C7327EEA15800472B66 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9EEE4C7427EEA16400472B66 /* UIImageView+extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9F46988EC532D0FE76775865 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47A8F455FCE0ECBA534344E5 /* libPods-desafioWhatsappViewCode.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1E7705675B7987ED8D709C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31A1F932B6BD99BEA115EF1A /* Pods-desafioWhatsappViewCode.debug.xcconfig */,
+				E67AC6522444C6E97C18632B /* Pods-desafioWhatsappViewCode.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EEE4C4C27EE7C5D00472B66 /* desafioWhatsappViewCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EEE4C6127EE7C6000472B66 /* Build configuration list for PBXNativeTarget "desafioWhatsappViewCode" */;
+			buildPhases = (
+				56408433C1E2759195FA2C98 /* [CP] Check Pods Manifest.lock */,
+				9EEE4C4927EE7C5D00472B66 /* Sources */,
+				9EEE4C4A27EE7C5D00472B66 /* Frameworks */,
+				9EEE4C4B27EE7C5D00472B66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = desafioWhatsappViewCode;
+			productName = desafioWhatsappViewCode;
+			productReference = 9EEE4C4D27EE7C5D00472B66 /* desafioWhatsappViewCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EEE4C4527EE7C5D00472B66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					9EEE4C4C27EE7C5D00472B66 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 9EEE4C4827EE7C5D00472B66 /* Build configuration list for PBXProject "desafioWhatsappViewCode" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EEE4C4427EE7C5D00472B66;
+			productRefGroup = 9EEE4C4E27EE7C5D00472B66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EEE4C4C27EE7C5D00472B66 /* desafioWhatsappViewCode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EEE4C4B27EE7C5D00472B66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EEE4C5D27EE7C6000472B66 /* LaunchScreen.storyboard in Resources */,
+				9EEE4C5A27EE7C6000472B66 /* Assets.xcassets in Resources */,
+				9EEE4C7727EEB11500472B66 /* simulator_screenshot_CE9DC48C-6815-427D-B5E6-432C15C5DE4E.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56408433C1E2759195FA2C98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-desafioWhatsappViewCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EEE4C4927EE7C5D00472B66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EEE4C6827EE83E000472B66 /* ChatItemTableViewCell.swift in Sources */,
+				9EEE4C7127EE9A5300472B66 /* GetChatDataService.swift in Sources */,
+				9EEE4C5527EE7C5D00472B66 /* ChatViewController.swift in Sources */,
+				9EEE4C6E27EE8E2A00472B66 /* ChatHeaderTableView.swift in Sources */,
+				9EEE4C5127EE7C5D00472B66 /* AppDelegate.swift in Sources */,
+				9EEE4C6B27EE874900472B66 /* Chat.swift in Sources */,
+				9EEE4C7527EEA16400472B66 /* UIImageView+extensions.swift in Sources */,
+				9EEE4C5327EE7C5D00472B66 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9EEE4C5B27EE7C6000472B66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EEE4C5C27EE7C6000472B66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EEE4C5F27EE7C6000472B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9EEE4C6027EE7C6000472B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EEE4C6227EE7C6000472B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31A1F932B6BD99BEA115EF1A /* Pods-desafioWhatsappViewCode.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9DGLJU24L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = desafioWhatsappViewCode/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.rogeriotavares.godev.desafioWhatsappViewCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EEE4C6327EE7C6000472B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E67AC6522444C6E97C18632B /* Pods-desafioWhatsappViewCode.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9DGLJU24L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = desafioWhatsappViewCode/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.rogeriotavares.godev.desafioWhatsappViewCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EEE4C4827EE7C5D00472B66 /* Build configuration list for PBXProject "desafioWhatsappViewCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EEE4C5F27EE7C6000472B66 /* Debug */,
+				9EEE4C6027EE7C6000472B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EEE4C6127EE7C6000472B66 /* Build configuration list for PBXNativeTarget "desafioWhatsappViewCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EEE4C6227EE7C6000472B66 /* Debug */,
+				9EEE4C6327EE7C6000472B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EEE4C4527EE7C5D00472B66 /* Project object */;
+}
