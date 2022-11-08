@@ -14,6 +14,13 @@ class ViewController: UIViewController {
      var button: UIButton = UIButton()
      */
     
+    private enum Defaults {
+        static let titleInfo = "Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo!"
+        static let titleButton = "Call View"
+        static let descriptionInfo = "Texto de descrição"
+        static let titleView = "View Code"
+    }
+    
     var safeArea: UILayoutGuide!
     
     lazy var iconImageView: UIImageView = {
@@ -29,30 +36,47 @@ class ViewController: UIViewController {
         label.textColor = .black
         label.numberOfLines = 0
         label.font = UIFont.systemFont(ofSize: 13)
-        label.text = "Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo! Olá mundo!"
+        label.text = Defaults.titleInfo
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    lazy var callButton: UIButton = {
+        let button = UIButton(type: .custom)
+        button.setTitle(Defaults.titleButton, for: .normal)
+        button.backgroundColor = .orange
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.addTarget(self, action: #selector(getView), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    lazy var content: UIView = {
+        let view = UIView()
+        view.backgroundColor = .systemIndigo
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    lazy var descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 15)
+        label.textColor = .grayViewCode
+        label.text = Defaults.descriptionInfo
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    @objc func getView() {
         
-        /*
-         Modelo 1
-         
-         button.frame = CGRect(x: 100, y: 100, width: 130, height: 45)
-         button.setTitle("Button view", for: .normal)
-         button.backgroundColor = .black
-         
-         view.addSubview(button)
-         */
-        
-        safeArea = view.layoutMarginsGuide
-        
-        view.addSubview(iconImageView)
-        view.addSubview(titleLabel)
-        
+    }
+    
+    private func addSubViews() {
+        view.addSubViews(iconImageView, callButton, titleLabel, content)
+        content.addSubview(descriptionLabel)
+    }
+    
+    private func configureIconImageView() {
         // Criação de constraint 1
         NSLayoutConstraint.activate([
             iconImageView.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 10),
@@ -60,14 +84,57 @@ class ViewController: UIViewController {
             iconImageView.widthAnchor.constraint(equalToConstant: 80),
             iconImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
-        
+    }
+    
+    private func configureTitleLabel() {
         // Criação de constraint 2
         titleLabel.topAnchor.constraint(equalTo: iconImageView.bottomAnchor, constant: 20).isActive = true
-        titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
-        titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
+        titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Metrics.Margin.default).isActive = true
+        titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -Metrics.Margin.default).isActive = true
+    }
+    
+    private func configureCallButton() {
+        NSLayoutConstraint.activate([
+            callButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10),
+            callButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Metrics.Margin.default),
+            callButton.heightAnchor.constraint(equalToConstant: Metrics.Margin.input),
+            callButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -Metrics.Margin.default)
+        ])
+    }
+    
+    private func configureContentView() {
+        NSLayoutConstraint.activate([
+            content.topAnchor.constraint(equalTo: callButton.bottomAnchor, constant: 20),
+            content.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Metrics.Margin.default),
+            content.heightAnchor.constraint(equalToConstant: 130),
+            content.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -Metrics.Margin.default)
+        ])
+    }
+    
+    private func configureDescriptionLabel() {
+        NSLayoutConstraint.activate([
+            descriptionLabel.centerXAnchor.constraint(equalTo: content.centerXAnchor),
+            descriptionLabel.centerYAnchor.constraint(equalTo: content.centerYAnchor)
+        ])
+    }
+    
+    private func configureView() {
+        title = Defaults.titleView
+        view.backgroundColor = .backgroundViewCode
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        title = "View Controller"
-        view.backgroundColor = .gray
+        safeArea = view.layoutMarginsGuide
+        
+        addSubViews()
+        configureIconImageView()
+        configureTitleLabel()
+        configureCallButton()
+        configureContentView()
+        configureDescriptionLabel()
+        configureView()
     }
     
     
